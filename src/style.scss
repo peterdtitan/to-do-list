@@ -11,7 +11,7 @@ $light-grey: #e7e6e6;
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #to-do-container {
@@ -75,7 +75,7 @@ hr {
 }
 
 #tasks-list {
-    list-style: none;
+  list-style: none;
 
   .task {
     @include row-space-between;
@@ -96,13 +96,13 @@ hr {
     }
 
     button {
-        @include icon;
+      @include icon;
     }
   }
 }
 
 #clear-completed-button {
-    padding: $inline-padding;
-    border: none;
-    background-color: #f5f5f5;
+  padding: $inline-padding;
+  border: none;
+  background-color: #f5f5f5;
 }

@@ -30,4 +30,4 @@ tasks.forEach((task) => {
         <button><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
     </li>
   `;
-}); 
+});
