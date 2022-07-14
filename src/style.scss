@@ -1,26 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+$body-background: #17b0be;
 $inline-padding: 20px 40px;
 $light-grey: #e7e6e6;
+$grey-background: #eee;
+$new-task-background: #f6f6f6;
+
+root {
+  --animate-delay: 0.5s;
+}
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: content-box;
   font-family: 'Poppins', sans-serif;
+  transition: 300ms;
 }
 
-button:hover {
+body {
+  position: relative;
+  background-color: $body-background;
+}
+
+.clipboard {
+  padding: calc(10vh - 25px) 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+}
+
+button {
   cursor: pointer;
 }
 
+.to-do-Section {
+  padding: 10vh 10vw;
+}
+
 #to-do-container {
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 5% 10%;
-  border: 1px solid $light-grey;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 10px solid #3a3a3c;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 @mixin icon() {
@@ -35,14 +62,26 @@ button:hover {
   justify-content: space-between;
 }
 
+.icon {
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+}
+
+.icon:hover {
+  opacity: 0.7;
+}
+
 .heading {
   @include row-space-between;
 
+  background-color: $grey-background;
   padding: $inline-padding;
 
   h1 {
-    font-size: 1rem;
-    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: bold;
   }
 
   button {
@@ -54,19 +93,29 @@ hr {
   border: 1px solid $light-grey;
 }
 
-.add-new-task {
+input {
+  border: none;
+}
+
+input:enabled {
+  border: none;
+  outline: none;
+}
+
+#add-new-task {
   @include row-space-between;
 
-  padding: $inline-padding;
+  background-color: $new-task-background;
+  padding: 0 40px;
 
   input {
-    width: 80%;
-    border: none;
+    padding: 25px 0;
+    background-color: $new-task-background;
+    width: 90%;
   }
 
-  input:enabled {
-    border: none;
-    outline: none;
+  input::placeholder {
+    font-style: italic;
   }
 
   button {
@@ -78,19 +127,36 @@ hr {
   list-style: none;
 
   .task {
-    @include row-space-between;
-
-    padding: $inline-padding;
+    display: flex;
+    padding: 0 40px;
     align-items: center;
+    gap: 15px;
 
-    h2 {
-      font-size: 1rem;
-      font-weight: normal;
+    .description {
+      width: 100%;
+      display: flex;
+      align-items: baseline;
+
+      input {
+        padding: 25px 0;
+        text-overflow: ellipsis;
+        width: 95%;
+      }
+
+      .checked {
+        color: grey;
+        font-style: italic;
+        text-decoration: line-through;
+      }
     }
 
-    div {
-      @include row-space-between;
+    input:disabled {
+      color: black;
+    }
 
+    .task-detail {
+      display: flex;
+      flex-grow: 1;
       gap: 15px;
       align-items: center;
     }
@@ -104,5 +170,40 @@ hr {
 #clear-completed-button {
   padding: $inline-padding;
   border: none;
-  background-color: #f5f5f5;
+  background-color: $grey-background;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  padding: 15px;
+  z-index: 1;
+  bottom: 10px;
+  right: 10px;
+  background-color: #cc0f0f;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+
+  p {
+    text-align: center;
+    color: white;
+  }
+}
+
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+
+#dropped {
+  inset: 0;
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
 }

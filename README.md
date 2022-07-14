@@ -9,7 +9,7 @@ An simple application to help you  keep track of the tasks you need to do and ma
 ## Built With
 
 - HTML
-- CSS
+- CSS (Animate CSS Framework inclusive)
 - JavaScript
 - Webpack
 
