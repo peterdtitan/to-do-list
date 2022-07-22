@@ -2,19 +2,19 @@
  * @jest-environment jsdom
  */
 
- import ToDoList from '../modules/to-do-list.js';
- import { removeAllCompleted } from '../modules/html_functions.js';
- 
- describe('Manipulate Tasks List', () => {
-   const todo = new ToDoList();
-   document.body.innerHTML = `
+import ToDoList from '../modules/to-do-list.js';
+import { removeAllCompleted } from '../modules/html_functions.js';
+
+describe('Manipulate Tasks List', () => {
+  const todo = new ToDoList();
+  document.body.innerHTML = `
     <ul id="tasks-list">
     </ul>
     `;
- 
-   const tasksList = document.getElementById('tasks-list');
 
-   test('Add a task', () => {
+  const tasksList = document.getElementById('tasks-list');
+
+  test('Add a task', () => {
     const previousLength = todo.tasks.length;
     todo.addNewTask('Test 1');
 
@@ -27,7 +27,7 @@
     expect(tasksList.querySelector('button')).toBeInstanceOf(Node);
   });
 
-  // Checking if a task exists 
+  // Checking if a task exists
   test('Test if a Task Exists', () => {
     expect(todo.taskExists('Test 1')).toBe(true);
     expect(todo.taskExists('Test 2')).toBe(false);
@@ -38,7 +38,7 @@
     expect(todo.tasks.at(0).description).toBe('Test test 1');
   });
 
-    // checking for task completion
+  // checking for task completion
   test('Check for the task completion', () => {
     todo.updateChecked(0, true);
     expect(todo.tasks.at(0).completed).toBe(true);
