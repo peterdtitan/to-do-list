@@ -27,6 +27,16 @@
     expect(tasksList.querySelector('button')).toBeInstanceOf(Node);
   });
 
+  // Checking if a task exists 
+  test('Test if a Task Exists', () => {
+    expect(todo.taskExists('Test 1')).toBe(true);
+    expect(todo.taskExists('Test 2')).toBe(false);
+  });
+
+  test('Editing a task Description', () => {
+    todo.updateExistingTask(0, 'Test test 1');
+    expect(todo.tasks.at(0).description).toBe('Test test 1');
+  });
     
 
 
