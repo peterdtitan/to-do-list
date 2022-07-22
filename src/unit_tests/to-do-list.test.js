@@ -27,7 +27,7 @@ describe('Manipulate Tasks List', () => {
     expect(tasksList.querySelector('button')).toBeInstanceOf(Node);
   });
 
-  // Checking if a task exists
+  // Checking if task exists
   test('Test if a Task Exists', () => {
     expect(todo.taskExists('Test 1')).toBe(true);
     expect(todo.taskExists('Test 2')).toBe(false);
@@ -38,7 +38,7 @@ describe('Manipulate Tasks List', () => {
     expect(todo.tasks.at(0).description).toBe('Test test 1');
   });
 
-  // checking for task completion
+  // checking for task completed
   test('Check for the task completion', () => {
     todo.updateChecked(0, true);
     expect(todo.tasks.at(0).completed).toBe(true);
