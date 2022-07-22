@@ -56,6 +56,4 @@
     todo.removeTask(task);
     expect(todo.tasks).toHaveLength(previousLength - 1);
   });
-
-
 });
