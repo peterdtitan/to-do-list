@@ -2,9 +2,9 @@
 
 # To Do List
 
-> Keep track of tasks you need to do.
+> Keep track of daily tasks you need to do.
 
-An simple application to help you  keep track of the tasks you need to do and mark the ones that you have completed.
+An simple application to help you keep track of the tasks you need to do and mark the ones that you have completed.
 
 ## Built With
 
@@ -26,7 +26,6 @@ A Web Browser (preferably Google Chrome)
 - Clone the GitHub Repository
 - Go to the Project Directory
 - Open ```index.html```
-
 
 ## Authors
 
