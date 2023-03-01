@@ -100,9 +100,6 @@ OR
 - Twitter: [@PeterDeTitan](https://twitter.com/PeterDeTitan)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/peterokorafor)
 
-👤 **Author2**
-
-- GitHub: [@ibizugbe](https://github.com/ibizugbe)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
