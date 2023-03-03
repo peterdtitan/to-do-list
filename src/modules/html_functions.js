@@ -109,7 +109,7 @@ const checkboxListener = (toDoList, task, checkbox, taskInput) => {
 };
 
 const getNewTaskNode = (task, toDoList) => {
-  // Initialize All Elements
+  // Initialize All HTML Elements and transitions
   const taskItem = document.createElement('li');
   taskItem.classList.add('animate__animated', 'animate__bounceInLeft');
   taskItem.classList.add('task');
@@ -148,14 +148,14 @@ const getNewTaskNode = (task, toDoList) => {
       <img class="icon" src="./assets/images/delete.png" alt="Remove">
     `;
 
-  // Create DOM hierarchy
+  // Create DOM order hierarchy
   description.appendChild(taskInput);
   taskDetail.appendChild(checkbox);
   taskDetail.appendChild(description);
   taskItem.appendChild(taskDetail);
   taskItem.appendChild(moreButton);
 
-  // Add Event Listeners
+  // Add Event Listeners for various functionalities
   doneButton.addEventListener('click', () => {
     doneButtonListener(toDoList, taskItem, taskInput, task, doneButton, removeButton, moreButton);
   });
