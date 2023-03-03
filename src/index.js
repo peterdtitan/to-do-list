@@ -1,33 +1,39 @@
 import './style.scss';
+import ToDoList from './modules/to-do-list.js';
+import {
+  populateAll, removeAllCompleted, showPopup, swing, drop,
+} from './modules/html_functions.js';
+import 'animate.css';
+import './assets/images/refresh.png';
+import './assets/images/add.png';
+import './assets/images/more.png';
+import './assets/images/delete.png';
+import './assets/images/clipboard.png';
+import './assets/images/accept.png';
+import './assets/images/favicon.png';
 
-const tasks = [
-  {
-    description: 'Do my laundry',
-    completed: false,
-    index: 0,
-  },
-  {
-    description: 'Restart Capstone project',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'Start JavaScript Refresher',
-    completed: false,
-    index: 2,
-  },
-];
+const toDoList = new ToDoList();
 
-const tasksList = document.getElementById('tasks-list');
-tasks.forEach((task) => {
-  tasksList.innerHTML += `
-    <li><hr></li>
-    <li class="task">
-        <div>
-            <input type="checkbox" name="checkbox-${task.index}" ${task.completed ? 'checked' : 'unchecked'}>
-            <h2>${task.description}</h2>
-        </div>
-        <button><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
-    </li>
-  `;
+populateAll(toDoList);
+
+const addNewTaskForm = document.getElementById('add-new-task');
+addNewTaskForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  toDoList.addNewTask(addNewTaskForm.elements.new_task.value);
+  addNewTaskForm.elements.new_task.value = '';
+});
+
+document.getElementById('clear-completed-button').addEventListener('click', () => {
+  if (removeAllCompleted(toDoList) === false) {
+    showPopup('Nothing to Remove');
+  }
+});
+
+const refreshButton = document.getElementById('refresh-button');
+refreshButton.addEventListener('click', () => {
+  swing();
+});
+
+document.querySelector('.clipboard img').addEventListener('click', () => {
+  drop();
 });
