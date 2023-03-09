@@ -5,7 +5,11 @@
   "private": true,
   "scripts": {
     "start": "webpack serve --open",
+<<<<<<< HEAD
     "test": "jest --coverage",
+=======
+    "test": "jest",
+>>>>>>> ef30ef75af6331810764efb1bb595ce5ea297af2
     "build": "webpack"
   },
   "repository": {
