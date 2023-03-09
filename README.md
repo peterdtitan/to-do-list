@@ -38,6 +38,9 @@
   </ul>
 </details>
 
+## 🚀 Live Demo<a name="live-demo"></a>
+
+- [Live Demo Link]()
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
@@ -92,11 +95,19 @@ OR
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Peter**
 
 - GitHub: [@peterdtitan](https://github.com/peterdtitan)
 - Twitter: [@PeterDeTitan](https://twitter.com/PeterDeTitan)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/peterokorafor)
+
+
+👤 **Hyder**
+
+- GitHub: [@codeWithHyder](https://github.com/codeWithHyder)
+- Twitter: [@Hyder](https://twitter.com/@hyder3512)
+- LinkedIn: [Hyder](https://linkedin.com/in/https://www.linkedin.com/in/ghulam-hyder-dar)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
