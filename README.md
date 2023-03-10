@@ -38,6 +38,9 @@
   </ul>
 </details>
 
+## 🚀 Live Demo<a name="live-demo"></a>
+
+- [Live Demo Link]()
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
@@ -59,16 +62,24 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 - **An IDE with a live server extension**
+- **An IDE with a live server extension**
 
 ### Setup
+### Setup
 
+Clone this repository to your desired folder:
 Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
   git clone git@github.com:peterdtitan/to-do-list.git
 ```
+```sh
+  cd my-folder
+  git clone git@github.com:peterdtitan/to-do-list.git
+```
 
+- **Once inside the directory, locate the index.html file and run with live server**
 - **Once inside the directory, locate the index.html file and run with live server**
 
 ## Getting Started
@@ -76,6 +87,8 @@ Clone this repository to your desired folder:
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- A simple web browser (preferably Chrome or Firefox)
+- An IDE
 - A simple web browser (preferably Chrome or Firefox)
 - An IDE
 
@@ -92,11 +105,19 @@ OR
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Peter**
 
 - GitHub: [@peterdtitan](https://github.com/peterdtitan)
 - Twitter: [@PeterDeTitan](https://twitter.com/PeterDeTitan)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/peterokorafor)
+
+
+👤 **Hyder**
+
+- GitHub: [@codeWithHyder](https://github.com/codeWithHyder)
+- Twitter: [@Hyder](https://twitter.com/@hyder3512)
+- LinkedIn: [Hyder](https://linkedin.com/in/https://www.linkedin.com/in/ghulam-hyder-dar)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -112,6 +133,7 @@ OR
 
 
 
+## 🤝 Contributing <a name="contributing"></a>
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
@@ -131,8 +153,23 @@ If you like this project, please give it star and follow the page for future upd
 
 
 ## 📝 License <a name="license"></a>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, please give it star and follow the page for future updates.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./MIT.md) licensed.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
