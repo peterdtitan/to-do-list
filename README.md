@@ -71,6 +71,7 @@ Clone this repository to your desired folder:
 
 - **Once inside the directory, locate the index.html file and run with live server**
 
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -87,16 +88,21 @@ OR
 - Download this repository as a .zip file
 - Extract contents and open the index.html file.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Peter**
 
 - GitHub: [@peterdtitan](https://github.com/peterdtitan)
 - Twitter: [@PeterDeTitan](https://twitter.com/PeterDeTitan)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/peterokorafor)
+
+
+👤 **Hyder**
+
+- GitHub: [@codeWithHyder](https://github.com/codeWithHyder)
+- Twitter: [@Hyder](https://twitter.com/@hyder3512)
+- LinkedIn: [Hyder](https://linkedin.com/in/https://www.linkedin.com/in/ghulam-hyder-dar)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -129,9 +135,9 @@ If you like this project, please give it star and follow the page for future upd
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
